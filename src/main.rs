@@ -1,8 +1,13 @@
-use std::{io, cmp::Ordering};
-use rand::Rng;
+// use std::{io, cmp::Ordering};
+// use rand::Rng;
+
+mod common_concepts;
 
 fn main() {
     // guessing game
+    
+    /* 
+
     println!("Guess the number");
     let secret_number = rand::thread_rng().gen_range(1..=100);
     
@@ -30,4 +35,9 @@ fn main() {
             Ordering::Greater => println!("Too big.")
         }   
     }
+    
+    */
+
+    // common concepts
+    common_concepts::common_concepts()
 }
