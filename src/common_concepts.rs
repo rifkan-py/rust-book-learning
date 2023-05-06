@@ -54,4 +54,37 @@ pub fn common_concepts() {
          2. The variable be immutable after those transformations have been completed
     */
 
+
+    
+    /*
+        // Data types
+        
+        Length	Signed	Unsigned
+        8-bit	i8  	u8
+        16-bit	i16	    u16
+        32-bit	i32	    u32
+        64-bit	i64	    u64
+        128-bit	i128	u128
+        arch	isize	usize
+
+
+        let result = 10;    // i32 by default
+        let age:u32 = 20;
+        let sum:i32 = 5-15;
+        let mark:isize = 10;
+        let count:usize = 30;
+        println!("result value is {}",result);
+        println!("sum is {} and age is {}",sum,age);
+        println!("mark is {} and count is {}",mark,count)
+
+
+        let result = 10.00;        //f64 by default
+        let interest:f32 = 8.35;
+        let cost:f64 = 15000.600;  //double precision
+        
+        println!("result value is {}",result);
+        println!("interest is {}",interest);
+        println!("cost is {}",cost);
+
+    */
 }
