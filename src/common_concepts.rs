@@ -43,10 +43,10 @@ pub fn common_concepts() {
         // the value of a is 11 here and if it multiplied by 2, it will be 22
         // this 22 will be only for this scope
         let a = a * 2;
-        println!("the value of a in inner scope is {a}")
+        println!("the value of a in inner scope is {a}");
     }
     // here value is just 11 since it does not know about what happened previous scope
-    println!("the value of a in outer scope is {a}")
+    println!("the value of a in outer scope is {a}");
 
     /*
         This technique is called shadowing 
@@ -87,4 +87,73 @@ pub fn common_concepts() {
         println!("cost is {}",cost);
 
     */
+    another_function(5);
+
+    let x = five();
+    println!("{x}");
+
+}
+
+fn another_function(x: i32) {
+    println!("Another function is called ${x}");
+
+    let number = 6;
+
+    // control flow
+    if number != 0{
+        println!("True")
+    }
+
+
+    if number % 4 == 0 {
+        println!("number is divisible by 4");
+    } else if number % 3 == 0 {
+        println!("number is divisible by 3");
+    } else if number % 2 == 0 {
+        println!("number is divisible by 2");
+    } else {
+        println!("number is not divisible by 4, 3, or 2");
+    }
+
+    let condition = true;
+
+    //just like turnery operator
+    let number = if condition { 5 } else { 6 };
+
+    println!("The value of number is: {number}");
+
+    // let condition = true;
+
+    // let number = if condition { 5 } else { "six" }; // error here
+
+    println!("The value of number is: {number}");
+
+
+    // loop {
+    //     println!("again!");
+    // }
+
+
+    // let mut number = 3;
+
+    // while number != 0 {
+    //     println!("{number}!");
+
+    //     number -= 1;
+    // }
+
+    // println!("LIFTOFF!!!");
+
+
+    // for number in (1..4).rev() {
+    //     println!("{number}!");
+    // }
+    // println!("LIFTOFF!!!");
+
+}
+
+
+// in we can return like this
+fn five() -> i32 {
+    5
 }
